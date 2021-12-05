@@ -1,6 +1,6 @@
 const { gql } = require('apollo-server');
 
-const accountTypeDefs = gql `
+const petTypeDefs = gql `
     type Pet{
         id: String!
         imgBin64: String!
@@ -21,7 +21,8 @@ const accountTypeDefs = gql `
         createPet(input: PetInput): Pet
     }
     type Query {
-        accountByUsername(id: String!): Pet
+        petById(id: String!): Pet
+        pets: [Pet!]! 
     }
 `;
-module.exports = accountTypeDefs;
+module.exports = petTypeDefs;
