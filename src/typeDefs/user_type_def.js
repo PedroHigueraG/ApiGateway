@@ -22,7 +22,6 @@ const authTypeDefs = gql`
         tel: Int!
         location: String!
         address: String!
-        isSuscribed: Boolean!
         gender: String!
     }
     type UserDetail {
@@ -34,7 +33,6 @@ const authTypeDefs = gql`
         tel: Int!
         location: String!
         address: String!
-        isSuscribed: Boolean!
         gender: String!
     }
     type Mutation {
